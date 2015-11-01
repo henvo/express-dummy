@@ -4,7 +4,7 @@
   "description": "Just another express dummy",
   "main": "server.js",
   "scripts": {
-    "test": "mocha spec",
+    "test": "mocha -r spec/",
     "build:js": "coffee -c -o . src/",
     "build:css": "stylus assets/css -o public/css",
     "build": "npm run build:js && npm run build:css"
