@@ -1,0 +1,37 @@
+{
+  "name": "express-dummy",
+  "version": "0.0.1",
+  "description": "Just another express dummy",
+  "main": "server.js",
+  "scripts": {
+    "test": "mocha spec",
+    "build:js": "coffee -c -o . src/",
+    "build:css": "stylus assets/css -o public/css",
+    "build": "npm run build:js && npm run build:css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/henvo/express-dummy.git"
+  },
+  "keywords": [
+    "express",
+    "coffeescript",
+    "jade",
+    "mocha",
+    "stylus"
+  ],
+  "author": "Henning Vogt",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/henvo/express-dummy/issues"
+  },
+  "homepage": "https://github.com/henvo/express-dummy#readme",
+  "dependencies": {
+    "express": "^4.13.3",
+    "jade": "^1.11.0"
+  },
+  "devDependencies": {
+    "should": "^7.1.1",
+    "supertest": "^1.1.0"
+  }
+}
