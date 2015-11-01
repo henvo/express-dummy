@@ -4,10 +4,11 @@
   "description": "Just another express dummy",
   "main": "server.js",
   "scripts": {
-    "test": "mocha -r spec/",
+    "test": "mocha --recursive spec/",
     "build:js": "coffee -c -o . src/",
     "build:css": "stylus assets/css -o public/css",
-    "build": "npm run build:js && npm run build:css"
+    "build": "npm run build:js && npm run build:css",
+    "clean": "rm -rf app config spec"
   },
   "repository": {
     "type": "git",
