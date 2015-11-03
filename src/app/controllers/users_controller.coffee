@@ -1,6 +1,6 @@
 module.exports =
   list: (req, res, next) ->
-    res.send('Users#list')
+    res.json([])
   read: (req, res, next) ->
     res.send('Users#read')
   update: (req, res, next) ->

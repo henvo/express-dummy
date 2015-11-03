@@ -3,7 +3,10 @@ request = require 'supertest'
 app = require '../../server.js'
 
 describe 'User controller', ->
-  it 'should get a list of users', (done) ->
+  it 'should get an array', (done) ->
     request app
       .get '/users'
-      .expect 200, done
+      .expect 200
+      .end (err, res)->
+        should(res.body).be.an.Array()
+        done()
