@@ -2,7 +2,7 @@ module.exports =
   list: (req, res, next) ->
     res.json([])
   read: (req, res, next) ->
-    res.send('Users#read')
+    res.json({})
   update: (req, res, next) ->
     res.send('Users#update')
   delete: (req, res, next) ->
