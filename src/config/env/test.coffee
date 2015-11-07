@@ -1,3 +1,3 @@
 module.exports =
   port: 8080,
-  db: 'mongodb://saturn/express-dummy-test'
+  db: 'mongodb://localhost/express-dummy-test'

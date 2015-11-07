@@ -1,3 +1,3 @@
 module.exports =
   port: 3000,
-  db: 'mongodb://saturn/express-dummy-development'
+  db: 'mongodb://localhost/express-dummy-development'
