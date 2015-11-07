@@ -1,11 +1,19 @@
+User = require('mongoose').model('User')
+
 module.exports =
   list: (req, res, next) ->
-    res.json([])
+    User.find {}, (err, docs) ->
+      res.json(docs) unless err
+
   read: (req, res, next) ->
-    res.json({})
+    User.findOne {}, (err, doc) ->
+      res.json(doc) unless err
+
   update: (req, res, next) ->
     res.send('Users#update')
+
   delete: (req, res, next) ->
     res.send('Users#delete')
+
   create: (req, res, next) ->
     res.send('Users#create')

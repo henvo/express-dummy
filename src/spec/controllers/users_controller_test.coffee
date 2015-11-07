@@ -12,8 +12,8 @@ describe 'User controller', ->
         done()
   it 'should get an user object', (done) ->
     request app
-      .get '/users/'
+      .get '/users/1'
       .expect 200
       .end (err, res)->
-        should(res.body).be.an.Object()
+        should(res.body).not.be.equal(null)
         done()
