@@ -7,7 +7,7 @@
     "test": "export NODE_ENV='test' && mocha --recursive spec/",
     "build:js": "coffee -c -o . src/",
     "build:css": "stylus assets/css -o public/css",
-    "build": "npm run build:js && npm run build:css",
+    "build": "npm run build:js -s && npm run build:css -s",
     "clean": "rm -rf app config spec"
   },
   "repository": {
