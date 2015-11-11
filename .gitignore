@@ -1,10 +1,11 @@
-/node_modules
-/public/css
 *.js
+*.log
+
+/node_modules
+
 /app/controllers
 /app/models
 /app/routes
-/app/controllers
+
 /config
 /spec
-*.log

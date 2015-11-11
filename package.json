@@ -8,7 +8,7 @@
     "build:js": "coffee -c -o . src/",
     "build:css": "stylus assets/css -o public/css",
     "build": "npm run build:js -s && npm run build:css -s",
-    "clean": "rm -rf *.js"
+    "clean": "rm -r app/controllers app/models app/routes config spec"
   },
   "repository": {
     "type": "git",
