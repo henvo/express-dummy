@@ -3,7 +3,7 @@ User = require('mongoose').model('User')
 module.exports =
   list: (req, res, next) ->
     User.find {}, (err, docs) ->
-      res.json(docs) unless err
+      res.render('index') unless err
 
   read: (req, res, next) ->
     User.findOne {}, (err, doc) ->
