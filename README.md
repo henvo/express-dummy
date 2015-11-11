@@ -1,2 +1,6 @@
 # express-dummy
-Just another express project skeleton.
+This is another express project skeleton.
+
+- Coffee-Script
+- Jade
+- Mongoose
